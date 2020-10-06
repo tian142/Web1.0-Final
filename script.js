@@ -4,6 +4,7 @@ const inputColor = document.querySelector('#input-color');
 const inputBgColor = document.querySelector('#input-bg-color');
 const input = document.querySelector('#text-input');
 const display = document.querySelector('#display');
+const hdisplay = document.querySelector('#headline-display');
 const showSize = document.querySelector('#show-size');
 const showFont = document.querySelector('#show-font');
 const showColor = document.querySelector('#show-color');
@@ -25,7 +26,7 @@ inputColor.addEventListener('input', (event) => {
 });
 
 inputBgColor.addEventListener('input', (event) => {
-  display.style.backgroundColor = event.target.value;
+  hdisplay.style.backgroundColor = event.target.value;
   showBgColor.innerHTML = event.target.value;
 });
 
